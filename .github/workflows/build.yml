@@ -183,6 +183,8 @@ jobs:
           cuda: "12.8.0"
           method: "network"
           sub-packages: '["nvcc", "cudart", "cublas", "cublas_dev", "thrust", "visual_studio_integration"]'
+          use-github-cache: false
+          use-local-cache: false
 
       - name: Install rocm-toolkit
         id: rocm-toolkit
